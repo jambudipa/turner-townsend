@@ -1,0 +1,27 @@
+<div *ngIf="featuredPlaylistsLoaded$ | async" fxFlexFill>
+  <div fxFlex="50" fxFlex.lt-lg="80"
+       fxFlex.lt-md="94" fxFlexOffset="25"
+       fxFlexOffset.lt-lg="10" fxFlexOffset.lt-md="3"
+       fxLayout="column"
+       fxLayoutAlign="center">
+    <h1>{{ (filteredFeaturedPlaylists$ | async)?.name }}</h1>
+
+    <tt-filter
+      (filterTextChanged)="onFilterTextChanged($event)"
+      [filterText]="filterText$ | async">
+    </tt-filter>
+
+    <tt-featured-playlists-presenter
+      (page)="onPage($event)"
+      [featuredPlayLists]="filteredPagedFeaturedPlaylists$ | async"
+      [length]="(filteredFeaturedPlaylists$ | async)?.content.length"
+      [pageIndex]="pageIndex$ | async"
+      [pageSizeOptions]="pageSizeOptions"
+      [pageSize]="pageSize$ | async"
+    >
+    </tt-featured-playlists-presenter>
+  </div>
+</div>
+<div *ngIf="featuredPlaylistsLoading$ | async" fxLayoutAlign="center">
+  <mat-spinner></mat-spinner>
+</div>

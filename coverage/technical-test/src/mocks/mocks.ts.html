@@ -1,0 +1,1344 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/mocks/mocks.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/mocks</a> mocks.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>3/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>3/3</span>
+      </div>
+    </div>
+    <p class="quiet">
+      Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+    </p>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a>
+<a name='L196'></a><a href='#L196'>196</a>
+<a name='L197'></a><a href='#L197'>197</a>
+<a name='L198'></a><a href='#L198'>198</a>
+<a name='L199'></a><a href='#L199'>199</a>
+<a name='L200'></a><a href='#L200'>200</a>
+<a name='L201'></a><a href='#L201'>201</a>
+<a name='L202'></a><a href='#L202'>202</a>
+<a name='L203'></a><a href='#L203'>203</a>
+<a name='L204'></a><a href='#L204'>204</a>
+<a name='L205'></a><a href='#L205'>205</a>
+<a name='L206'></a><a href='#L206'>206</a>
+<a name='L207'></a><a href='#L207'>207</a>
+<a name='L208'></a><a href='#L208'>208</a>
+<a name='L209'></a><a href='#L209'>209</a>
+<a name='L210'></a><a href='#L210'>210</a>
+<a name='L211'></a><a href='#L211'>211</a>
+<a name='L212'></a><a href='#L212'>212</a>
+<a name='L213'></a><a href='#L213'>213</a>
+<a name='L214'></a><a href='#L214'>214</a>
+<a name='L215'></a><a href='#L215'>215</a>
+<a name='L216'></a><a href='#L216'>216</a>
+<a name='L217'></a><a href='#L217'>217</a>
+<a name='L218'></a><a href='#L218'>218</a>
+<a name='L219'></a><a href='#L219'>219</a>
+<a name='L220'></a><a href='#L220'>220</a>
+<a name='L221'></a><a href='#L221'>221</a>
+<a name='L222'></a><a href='#L222'>222</a>
+<a name='L223'></a><a href='#L223'>223</a>
+<a name='L224'></a><a href='#L224'>224</a>
+<a name='L225'></a><a href='#L225'>225</a>
+<a name='L226'></a><a href='#L226'>226</a>
+<a name='L227'></a><a href='#L227'>227</a>
+<a name='L228'></a><a href='#L228'>228</a>
+<a name='L229'></a><a href='#L229'>229</a>
+<a name='L230'></a><a href='#L230'>230</a>
+<a name='L231'></a><a href='#L231'>231</a>
+<a name='L232'></a><a href='#L232'>232</a>
+<a name='L233'></a><a href='#L233'>233</a>
+<a name='L234'></a><a href='#L234'>234</a>
+<a name='L235'></a><a href='#L235'>235</a>
+<a name='L236'></a><a href='#L236'>236</a>
+<a name='L237'></a><a href='#L237'>237</a>
+<a name='L238'></a><a href='#L238'>238</a>
+<a name='L239'></a><a href='#L239'>239</a>
+<a name='L240'></a><a href='#L240'>240</a>
+<a name='L241'></a><a href='#L241'>241</a>
+<a name='L242'></a><a href='#L242'>242</a>
+<a name='L243'></a><a href='#L243'>243</a>
+<a name='L244'></a><a href='#L244'>244</a>
+<a name='L245'></a><a href='#L245'>245</a>
+<a name='L246'></a><a href='#L246'>246</a>
+<a name='L247'></a><a href='#L247'>247</a>
+<a name='L248'></a><a href='#L248'>248</a>
+<a name='L249'></a><a href='#L249'>249</a>
+<a name='L250'></a><a href='#L250'>250</a>
+<a name='L251'></a><a href='#L251'>251</a>
+<a name='L252'></a><a href='#L252'>252</a>
+<a name='L253'></a><a href='#L253'>253</a>
+<a name='L254'></a><a href='#L254'>254</a>
+<a name='L255'></a><a href='#L255'>255</a>
+<a name='L256'></a><a href='#L256'>256</a>
+<a name='L257'></a><a href='#L257'>257</a>
+<a name='L258'></a><a href='#L258'>258</a>
+<a name='L259'></a><a href='#L259'>259</a>
+<a name='L260'></a><a href='#L260'>260</a>
+<a name='L261'></a><a href='#L261'>261</a>
+<a name='L262'></a><a href='#L262'>262</a>
+<a name='L263'></a><a href='#L263'>263</a>
+<a name='L264'></a><a href='#L264'>264</a>
+<a name='L265'></a><a href='#L265'>265</a>
+<a name='L266'></a><a href='#L266'>266</a>
+<a name='L267'></a><a href='#L267'>267</a>
+<a name='L268'></a><a href='#L268'>268</a>
+<a name='L269'></a><a href='#L269'>269</a>
+<a name='L270'></a><a href='#L270'>270</a>
+<a name='L271'></a><a href='#L271'>271</a>
+<a name='L272'></a><a href='#L272'>272</a>
+<a name='L273'></a><a href='#L273'>273</a>
+<a name='L274'></a><a href='#L274'>274</a>
+<a name='L275'></a><a href='#L275'>275</a>
+<a name='L276'></a><a href='#L276'>276</a>
+<a name='L277'></a><a href='#L277'>277</a>
+<a name='L278'></a><a href='#L278'>278</a>
+<a name='L279'></a><a href='#L279'>279</a>
+<a name='L280'></a><a href='#L280'>280</a>
+<a name='L281'></a><a href='#L281'>281</a>
+<a name='L282'></a><a href='#L282'>282</a>
+<a name='L283'></a><a href='#L283'>283</a>
+<a name='L284'></a><a href='#L284'>284</a>
+<a name='L285'></a><a href='#L285'>285</a>
+<a name='L286'></a><a href='#L286'>286</a>
+<a name='L287'></a><a href='#L287'>287</a>
+<a name='L288'></a><a href='#L288'>288</a>
+<a name='L289'></a><a href='#L289'>289</a>
+<a name='L290'></a><a href='#L290'>290</a>
+<a name='L291'></a><a href='#L291'>291</a>
+<a name='L292'></a><a href='#L292'>292</a>
+<a name='L293'></a><a href='#L293'>293</a>
+<a name='L294'></a><a href='#L294'>294</a>
+<a name='L295'></a><a href='#L295'>295</a>
+<a name='L296'></a><a href='#L296'>296</a>
+<a name='L297'></a><a href='#L297'>297</a>
+<a name='L298'></a><a href='#L298'>298</a>
+<a name='L299'></a><a href='#L299'>299</a>
+<a name='L300'></a><a href='#L300'>300</a>
+<a name='L301'></a><a href='#L301'>301</a>
+<a name='L302'></a><a href='#L302'>302</a>
+<a name='L303'></a><a href='#L303'>303</a>
+<a name='L304'></a><a href='#L304'>304</a>
+<a name='L305'></a><a href='#L305'>305</a>
+<a name='L306'></a><a href='#L306'>306</a>
+<a name='L307'></a><a href='#L307'>307</a>
+<a name='L308'></a><a href='#L308'>308</a>
+<a name='L309'></a><a href='#L309'>309</a>
+<a name='L310'></a><a href='#L310'>310</a>
+<a name='L311'></a><a href='#L311'>311</a>
+<a name='L312'></a><a href='#L312'>312</a>
+<a name='L313'></a><a href='#L313'>313</a>
+<a name='L314'></a><a href='#L314'>314</a>
+<a name='L315'></a><a href='#L315'>315</a>
+<a name='L316'></a><a href='#L316'>316</a>
+<a name='L317'></a><a href='#L317'>317</a>
+<a name='L318'></a><a href='#L318'>318</a>
+<a name='L319'></a><a href='#L319'>319</a>
+<a name='L320'></a><a href='#L320'>320</a>
+<a name='L321'></a><a href='#L321'>321</a>
+<a name='L322'></a><a href='#L322'>322</a>
+<a name='L323'></a><a href='#L323'>323</a>
+<a name='L324'></a><a href='#L324'>324</a>
+<a name='L325'></a><a href='#L325'>325</a>
+<a name='L326'></a><a href='#L326'>326</a>
+<a name='L327'></a><a href='#L327'>327</a>
+<a name='L328'></a><a href='#L328'>328</a>
+<a name='L329'></a><a href='#L329'>329</a>
+<a name='L330'></a><a href='#L330'>330</a>
+<a name='L331'></a><a href='#L331'>331</a>
+<a name='L332'></a><a href='#L332'>332</a>
+<a name='L333'></a><a href='#L333'>333</a>
+<a name='L334'></a><a href='#L334'>334</a>
+<a name='L335'></a><a href='#L335'>335</a>
+<a name='L336'></a><a href='#L336'>336</a>
+<a name='L337'></a><a href='#L337'>337</a>
+<a name='L338'></a><a href='#L338'>338</a>
+<a name='L339'></a><a href='#L339'>339</a>
+<a name='L340'></a><a href='#L340'>340</a>
+<a name='L341'></a><a href='#L341'>341</a>
+<a name='L342'></a><a href='#L342'>342</a>
+<a name='L343'></a><a href='#L343'>343</a>
+<a name='L344'></a><a href='#L344'>344</a>
+<a name='L345'></a><a href='#L345'>345</a>
+<a name='L346'></a><a href='#L346'>346</a>
+<a name='L347'></a><a href='#L347'>347</a>
+<a name='L348'></a><a href='#L348'>348</a>
+<a name='L349'></a><a href='#L349'>349</a>
+<a name='L350'></a><a href='#L350'>350</a>
+<a name='L351'></a><a href='#L351'>351</a>
+<a name='L352'></a><a href='#L352'>352</a>
+<a name='L353'></a><a href='#L353'>353</a>
+<a name='L354'></a><a href='#L354'>354</a>
+<a name='L355'></a><a href='#L355'>355</a>
+<a name='L356'></a><a href='#L356'>356</a>
+<a name='L357'></a><a href='#L357'>357</a>
+<a name='L358'></a><a href='#L358'>358</a>
+<a name='L359'></a><a href='#L359'>359</a>
+<a name='L360'></a><a href='#L360'>360</a>
+<a name='L361'></a><a href='#L361'>361</a>
+<a name='L362'></a><a href='#L362'>362</a>
+<a name='L363'></a><a href='#L363'>363</a>
+<a name='L364'></a><a href='#L364'>364</a>
+<a name='L365'></a><a href='#L365'>365</a>
+<a name='L366'></a><a href='#L366'>366</a>
+<a name='L367'></a><a href='#L367'>367</a>
+<a name='L368'></a><a href='#L368'>368</a>
+<a name='L369'></a><a href='#L369'>369</a>
+<a name='L370'></a><a href='#L370'>370</a>
+<a name='L371'></a><a href='#L371'>371</a>
+<a name='L372'></a><a href='#L372'>372</a>
+<a name='L373'></a><a href='#L373'>373</a>
+<a name='L374'></a><a href='#L374'>374</a>
+<a name='L375'></a><a href='#L375'>375</a>
+<a name='L376'></a><a href='#L376'>376</a>
+<a name='L377'></a><a href='#L377'>377</a>
+<a name='L378'></a><a href='#L378'>378</a>
+<a name='L379'></a><a href='#L379'>379</a>
+<a name='L380'></a><a href='#L380'>380</a>
+<a name='L381'></a><a href='#L381'>381</a>
+<a name='L382'></a><a href='#L382'>382</a>
+<a name='L383'></a><a href='#L383'>383</a>
+<a name='L384'></a><a href='#L384'>384</a>
+<a name='L385'></a><a href='#L385'>385</a>
+<a name='L386'></a><a href='#L386'>386</a>
+<a name='L387'></a><a href='#L387'>387</a>
+<a name='L388'></a><a href='#L388'>388</a>
+<a name='L389'></a><a href='#L389'>389</a>
+<a name='L390'></a><a href='#L390'>390</a>
+<a name='L391'></a><a href='#L391'>391</a>
+<a name='L392'></a><a href='#L392'>392</a>
+<a name='L393'></a><a href='#L393'>393</a>
+<a name='L394'></a><a href='#L394'>394</a>
+<a name='L395'></a><a href='#L395'>395</a>
+<a name='L396'></a><a href='#L396'>396</a>
+<a name='L397'></a><a href='#L397'>397</a>
+<a name='L398'></a><a href='#L398'>398</a>
+<a name='L399'></a><a href='#L399'>399</a>
+<a name='L400'></a><a href='#L400'>400</a>
+<a name='L401'></a><a href='#L401'>401</a>
+<a name='L402'></a><a href='#L402'>402</a>
+<a name='L403'></a><a href='#L403'>403</a>
+<a name='L404'></a><a href='#L404'>404</a>
+<a name='L405'></a><a href='#L405'>405</a>
+<a name='L406'></a><a href='#L406'>406</a>
+<a name='L407'></a><a href='#L407'>407</a>
+<a name='L408'></a><a href='#L408'>408</a>
+<a name='L409'></a><a href='#L409'>409</a>
+<a name='L410'></a><a href='#L410'>410</a>
+<a name='L411'></a><a href='#L411'>411</a>
+<a name='L412'></a><a href='#L412'>412</a>
+<a name='L413'></a><a href='#L413'>413</a>
+<a name='L414'></a><a href='#L414'>414</a>
+<a name='L415'></a><a href='#L415'>415</a>
+<a name='L416'></a><a href='#L416'>416</a>
+<a name='L417'></a><a href='#L417'>417</a>
+<a name='L418'></a><a href='#L418'>418</a>
+<a name='L419'></a><a href='#L419'>419</a>
+<a name='L420'></a><a href='#L420'>420</a>
+<a name='L421'></a><a href='#L421'>421</a>
+<a name='L422'></a><a href='#L422'>422</a>
+<a name='L423'></a><a href='#L423'>423</a>
+<a name='L424'></a><a href='#L424'>424</a>
+<a name='L425'></a><a href='#L425'>425</a>
+<a name='L426'></a><a href='#L426'>426</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// tslint:disable max-line-length
+import { FeaturedPlaylistsState } from '../app/core/store/reducers';
+import { FeaturedPlaylists } from '../app/models';
+import { HttpErrorResponse } from '@angular/common/http';
+&nbsp;
+export const featuredPlayLists = {
+  name: 'Featured Playlists',
+  content: [
+    {
+      id: 'pl.2b0e6e332fdf4b7a91164da3162127b5',
+      kind: 'playlist',
+      name: 'New Music Daily',
+      url: 'https://music.apple.com/us/playlist/new-music-daily/pl.2b0e6e332fdf4b7a91164da3162127b5?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music',
+      artwork: 'https://is2-ssl.mzstatic.com/image/thumb/Features113/v4/e0/08/d0/e008d09d-4a04-eebc-9f63-6d3c2bc1eae7/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.f4d106fed2bd41149aaacabb233eb5eb',
+      kind: 'playlist',
+      name: 'Today\'s Hits',
+      url: 'https://music.apple.com/us/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Pop',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features117/v4/94/17/2e/94172e16-e5d7-2d2b-66ec-e72473988168/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.abe8ba42278f4ef490e3a9fc5ec8e8c5',
+      kind: 'playlist',
+      name: 'Rap Life',
+      url: 'https://music.apple.com/us/playlist/rap-life/pl.abe8ba42278f4ef490e3a9fc5ec8e8c5?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Hip-Hop',
+      artwork: 'https://is2-ssl.mzstatic.com/image/thumb/Features123/v4/15/ea/a0/15eaa0b1-72e6-5078-dacb-27407b8fd6a5/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.5cb9c0f3ca9d4fc1bccbaf67ca6201e7',
+      kind: 'playlist',
+      name: 'Up Next',
+      url: 'https://music.apple.com/us/playlist/up-next/pl.5cb9c0f3ca9d4fc1bccbaf67ca6201e7?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music',
+      artwork: 'https://is4-ssl.mzstatic.com/image/thumb/Features113/v4/f9/7c/6e/f97c6ebc-8d33-cca4-a808-3f4d504297ba/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.4b364b8b182f4115acbf6deb83bd5222',
+      kind: 'playlist',
+      name: '¡Dale Play!',
+      url: 'https://music.apple.com/us/playlist/dale-play/pl.4b364b8b182f4115acbf6deb83bd5222?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Pop Latino',
+      artwork: 'https://is2-ssl.mzstatic.com/image/thumb/Features113/v4/be/c7/a9/bec7a928-ada0-bf24-480c-f240000bf3bb/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.5ee8333dbe944d9f9151e97d92d1ead9',
+      kind: 'playlist',
+      name: 'A-List Pop',
+      url: 'https://music.apple.com/us/playlist/a-list-pop/pl.5ee8333dbe944d9f9151e97d92d1ead9?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Pop',
+      artwork: 'https://is3-ssl.mzstatic.com/image/thumb/Features113/v4/dc/c4/4f/dcc44fdb-c5a7-571a-8d4c-e44b1c0eb91b/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.426a1044619f47d6b1f86b3f79ecf857',
+      kind: 'playlist',
+      name: '#OnRepeat',
+      url: 'https://music.apple.com/us/playlist/onrepeat/pl.426a1044619f47d6b1f86b3f79ecf857?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Hip-Hop',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features123/v4/5a/91/21/5a9121c6-bd83-a3d8-012d-b8f00dc4d06a/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.2a0b1ea7704842f4b956e959067b8389',
+      kind: 'playlist',
+      name: 'In My Room',
+      url: 'https://music.apple.com/us/playlist/in-my-room/pl.2a0b1ea7704842f4b956e959067b8389?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Pop',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features128/v4/f9/30/e9/f930e902-c3df-3d85-884f-9a2170e6db2b/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.74fdbee9582349a4bdca600cbdffa2e9',
+      kind: 'playlist',
+      name: 'The Plug',
+      url: 'https://music.apple.com/us/playlist/the-plug/pl.74fdbee9582349a4bdca600cbdffa2e9?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Hip-Hop',
+      artwork: 'https://is5-ssl.mzstatic.com/image/thumb/Features124/v4/ae/41/87/ae4187bd-aa54-5523-5cd7-78db3580cc3d/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.5030c32a73e9459d82fae6f7b046d3ec',
+      kind: 'playlist',
+      name: 'Trap Kingz',
+      url: 'https://music.apple.com/us/playlist/trap-kingz/pl.5030c32a73e9459d82fae6f7b046d3ec?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Urbano Latino',
+      artwork: 'https://is5-ssl.mzstatic.com/image/thumb/Features113/v4/9a/82/3d/9a823d34-a504-4a99-20a6-a8fee44621b7/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.6bf4415b83ce4f3789614ac4c3675740',
+      kind: 'playlist',
+      name: 'danceXL',
+      url: 'https://music.apple.com/us/playlist/dancexl/pl.6bf4415b83ce4f3789614ac4c3675740?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Dance',
+      artwork: 'https://is2-ssl.mzstatic.com/image/thumb/Features123/v4/7b/06/fa/7b06fa6e-64fd-2692-4667-baf26f88ac5c/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.2a86e272cf2349a99de68fd9cf7d4776',
+      kind: 'playlist',
+      name: 'Today\'s Indie Rock',
+      url: 'https://music.apple.com/us/playlist/todays-indie-rock/pl.2a86e272cf2349a99de68fd9cf7d4776?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Indie',
+      artwork: 'https://is3-ssl.mzstatic.com/image/thumb/Features124/v4/44/9d/66/449d66d4-38e5-f536-4b7f-71d28acc3202/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.34c6bf42a176492abb918edb57b565e9',
+      kind: 'playlist',
+      name: 'Songs of the Summer',
+      url: 'https://music.apple.com/us/playlist/songs-of-the-summer/pl.34c6bf42a176492abb918edb57b565e9?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Pop',
+      artwork: 'https://is2-ssl.mzstatic.com/image/thumb/Features128/v4/d9/e4/1c/d9e41c78-9b3b-96fe-f9c3-e8aac136a47e/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.0f11015342a9473c849f0af4ab5f509c',
+      kind: 'playlist',
+      name: 'The Sand Bar',
+      url: 'https://music.apple.com/us/playlist/the-sand-bar/pl.0f11015342a9473c849f0af4ab5f509c?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Country',
+      artwork: 'https://is4-ssl.mzstatic.com/image/thumb/Features128/v4/a6/d0/f6/a6d0f622-8d58-d697-ab96-7a632162a42e/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.29c85b7a007946c0b7c5ab445a544b0c',
+      kind: 'playlist',
+      name: 'Meditation Moments',
+      url: 'https://music.apple.com/us/playlist/meditation-moments/pl.29c85b7a007946c0b7c5ab445a544b0c?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Classical',
+      artwork: 'https://is2-ssl.mzstatic.com/image/thumb/Features114/v4/d2/ba/0e/d2ba0e33-30a8-666d-be44-89cbba8fd8c0/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.7e484c6b5169487d9d465a4b8bc68d09',
+      kind: 'playlist',
+      name: 'The Beats 1 List',
+      url: 'https://music.apple.com/us/playlist/the-beats-1-list/pl.7e484c6b5169487d9d465a4b8bc68d09?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music',
+      artwork: 'https://is3-ssl.mzstatic.com/image/thumb/Features123/v4/24/d9/1f/24d91f88-d53c-bf82-c95d-4cf35ea0b844/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.b7ae3e0a28e84c5c96c4284b6a6c70af',
+      kind: 'playlist',
+      name: 'R&amp;B Now',
+      url: 'https://music.apple.com/us/playlist/r-b-now/pl.b7ae3e0a28e84c5c96c4284b6a6c70af?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music R&amp;B',
+      artwork: 'https://is2-ssl.mzstatic.com/image/thumb/Features123/v4/c6/cb/71/c6cb717b-9392-6088-5e33-27117ab96eaa/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.c79a0c8eac46444ea8058d68008ba2d4',
+      kind: 'playlist',
+      name: 'Wake Me Up',
+      url: 'https://music.apple.com/us/playlist/wake-me-up/pl.c79a0c8eac46444ea8058d68008ba2d4?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Pop',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/4f/71/35/4f71350e-b74c-ae9f-f3dc-67af06fda2ad/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.58c2477d86ea46db997048afd159d01d',
+      kind: 'playlist',
+      name: 'The Riff',
+      url: 'https://music.apple.com/us/playlist/the-riff/pl.58c2477d86ea46db997048afd159d01d?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Hard Rock',
+      artwork: 'https://is2-ssl.mzstatic.com/image/thumb/Features114/v4/ec/f3/7a/ecf37ad1-e9b4-206c-5f09-70347bf5f54c/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.51c1d571cc7b484eb1dead1939811f2d',
+      kind: 'playlist',
+      name: 'Optimus Metallum',
+      url: 'https://music.apple.com/us/playlist/optimus-metallum/pl.51c1d571cc7b484eb1dead1939811f2d?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Metal',
+      artwork: 'https://is4-ssl.mzstatic.com/image/thumb/Features123/v4/f3/ed/62/f3ed620a-da55-44ef-67fe-c36a4a50ffa7/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.d73049603d7143ec86d84fc8b8af3827',
+      kind: 'playlist',
+      name: 'Groove',
+      url: 'https://music.apple.com/us/playlist/groove/pl.d73049603d7143ec86d84fc8b8af3827?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Dance',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/cd/2e/ea/cd2eeac2-6593-c899-6582-11c0522f4ef8/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.c463e22d78b44011935bb22c39d2c66f',
+      kind: 'playlist',
+      name: 'Wax Eclectic',
+      url: 'https://music.apple.com/us/playlist/wax-eclectic/pl.c463e22d78b44011935bb22c39d2c66f?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Rock',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features123/v4/4f/2f/c1/4f2fc1a8-4423-b8ee-7724-1695b4d7bd2f/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.9b3daf7efb204d2ba88c21ba76942097',
+      kind: 'playlist',
+      name: 'INDIY',
+      url: 'https://music.apple.com/us/playlist/indiy/pl.9b3daf7efb204d2ba88c21ba76942097?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Indie',
+      artwork: 'https://is3-ssl.mzstatic.com/image/thumb/Features128/v4/9e/3e/1b/9e3e1b84-f2c5-b3ed-4f93-2082606a108e/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.0e91490f3310408eb1186fc9befb3d11',
+      kind: 'playlist',
+      name: 'Untitled',
+      url: 'https://music.apple.com/us/playlist/untitled/pl.0e91490f3310408eb1186fc9befb3d11?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Indie',
+      artwork: 'https://is5-ssl.mzstatic.com/image/thumb/Features125/v4/20/ce/45/20ce457a-cbc0-d418-9aed-79c313b66700/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.2bb29727dbc34a63936787297305c37c',
+      kind: 'playlist',
+      name: 'Today\'s Chill',
+      url: 'https://music.apple.com/us/playlist/todays-chill/pl.2bb29727dbc34a63936787297305c37c?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Electronic',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features128/v4/0d/96/b8/0d96b8ca-a12d-32a5-520f-c64bca4793bb/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.b5e8dbe8a706496496e1292466839207',
+      kind: 'playlist',
+      name: 'Acoustic Chill',
+      url: 'https://music.apple.com/us/playlist/acoustic-chill/pl.b5e8dbe8a706496496e1292466839207?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Singer/Songwriter',
+      artwork: 'https://is5-ssl.mzstatic.com/image/thumb/Features124/v4/08/f8/31/08f83119-2394-6f45-e3aa-54cb16ab075f/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.84c6259af39545a1bbe8a57f169925c9',
+      kind: 'playlist',
+      name: 'RGTN Fire',
+      url: 'https://music.apple.com/us/playlist/rgtn-fire/pl.84c6259af39545a1bbe8a57f169925c9?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Urbano Latino',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features113/v4/22/56/51/22565139-2b96-d1f9-ce1d-3a02a65d43e7/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.139df28c68b0465fb57f162799b84699',
+      kind: 'playlist',
+      name: 'La Fórmula',
+      url: 'https://music.apple.com/us/playlist/la-f%C3%B3rmula/pl.139df28c68b0465fb57f162799b84699?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Urbano Latino',
+      artwork: 'https://is4-ssl.mzstatic.com/image/thumb/Features128/v4/87/da/43/87da43d5-9930-38ce-79b5-dd6a228959d3/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.bf9a12f44e504278baeaff311b5964a9',
+      kind: 'playlist',
+      name: 'Southern Craft',
+      url: 'https://music.apple.com/us/playlist/southern-craft/pl.bf9a12f44e504278baeaff311b5964a9?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Americana',
+      artwork: 'https://is3-ssl.mzstatic.com/image/thumb/Features123/v4/e9/e7/b2/e9e7b235-feaf-96ba-f1ac-bfbddaa14e72/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.0eb0cf3412c14c9c9df870ca4da0ca6b',
+      kind: 'playlist',
+      name: 'Back Porch Country',
+      url: 'https://music.apple.com/us/playlist/back-porch-country/pl.0eb0cf3412c14c9c9df870ca4da0ca6b?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Country',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/8d/e9/b4/8de9b468-6985-648f-939f-2086658e8c77/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.5a26d34eb6ec4825976bdef03784537d',
+      kind: 'playlist',
+      name: 'Classical Chill',
+      url: 'https://music.apple.com/us/playlist/classical-chill/pl.5a26d34eb6ec4825976bdef03784537d?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Classical',
+      artwork: 'https://is5-ssl.mzstatic.com/image/thumb/Features124/v4/19/53/e2/1953e296-339b-b0b1-70af-80d29338179c/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.9e1d81be9a3a4a93af47734543cdd3a0',
+      kind: 'playlist',
+      name: 'Brown Sugar',
+      url: 'https://music.apple.com/us/playlist/brown-sugar/pl.9e1d81be9a3a4a93af47734543cdd3a0?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music R&amp;B',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/d8/29/69/d8296994-5a35-c853-c6c4-d2878b8bd6fb/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.06b53bbdc8844d2eb4573826b074da54',
+      kind: 'playlist',
+      name: 'SUAVE',
+      url: 'https://music.apple.com/us/playlist/suave/pl.06b53bbdc8844d2eb4573826b074da54?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music R&amp;B',
+      artwork: 'https://is3-ssl.mzstatic.com/image/thumb/Features123/v4/c2/28/55/c2285504-5f21-37c4-f54a-f4c621e3f9be/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.5b0194eaa170401e8986335d7e77aa4e',
+      kind: 'playlist',
+      name: 'World Record',
+      url: 'https://music.apple.com/us/playlist/world-record/pl.5b0194eaa170401e8986335d7e77aa4e?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Zane Lowe',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features18/v4/60/de/60/60de606d-33ca-6857-0e0a-974f1aeb4bc6/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.67bd9524334c4ea288ce0ca9bc0f0b95',
+      kind: 'playlist',
+      name: 'Alt R&amp;B',
+      url: 'https://music.apple.com/us/playlist/alt-r-b/pl.67bd9524334c4ea288ce0ca9bc0f0b95?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music R&amp;B',
+      artwork: 'https://is4-ssl.mzstatic.com/image/thumb/Features114/v4/29/8d/e2/298de2ff-9afe-8ad2-d213-c42f51f06ca6/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.3a85cc83130443b68415718f19372cf4',
+      kind: 'playlist',
+      name: 'Today\'s Easy Hits',
+      url: 'https://music.apple.com/us/playlist/todays-easy-hits/pl.3a85cc83130443b68415718f19372cf4?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Pop',
+      artwork: 'https://is5-ssl.mzstatic.com/image/thumb/Features123/v4/bc/a8/58/bca858f6-72b5-fec7-bcb0-ba9e42c48600/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.daa2a689923d4562bf5650a96809f929',
+      kind: 'playlist',
+      name: 'Mood.',
+      url: 'https://music.apple.com/us/playlist/mood/pl.daa2a689923d4562bf5650a96809f929?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music R&amp;B',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features123/v4/dd/b7/8b/ddb78baf-7d3a-ad42-4cc3-d4f1237fd7e7/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.77a913605bba4a968c5cb2b93d87b2ca',
+      kind: 'playlist',
+      name: 'Breaking Dance',
+      url: 'https://music.apple.com/us/playlist/breaking-dance/pl.77a913605bba4a968c5cb2b93d87b2ca?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Dance',
+      artwork: 'https://is2-ssl.mzstatic.com/image/thumb/Features118/v4/1e/8f/16/1e8f16ad-d61f-94fe-090e-4f52556ba765/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.fecfa8a26ea44ad581d4fe501892c8ff',
+      kind: 'playlist',
+      name: 'Today’s Christian',
+      url: 'https://music.apple.com/us/playlist/todays-christian/pl.fecfa8a26ea44ad581d4fe501892c8ff?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Christian &amp; Gospel',
+      artwork: 'https://is4-ssl.mzstatic.com/image/thumb/Features113/v4/e9/61/79/e9617945-a962-c232-1017-3fe801ffafa4/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.ffd19f956613408b8ef24ece4ad16c08',
+      kind: 'playlist',
+      name: 'Pure Fuego',
+      url: 'https://music.apple.com/us/playlist/pure-fuego/pl.ffd19f956613408b8ef24ece4ad16c08?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Urbano Latino',
+      artwork: 'https://is4-ssl.mzstatic.com/image/thumb/Features118/v4/94/de/a4/94dea4e7-c624-239b-59ab-bc3c3b559fcb/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.f494429097a74da48204a51b7f25901b',
+      kind: 'playlist',
+      name: 'Midnight City',
+      url: 'https://music.apple.com/us/playlist/midnight-city/pl.f494429097a74da48204a51b7f25901b?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Indie',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features118/v4/de/de/11/dede1149-1341-d0cf-1272-933d24a6ce3f/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.4705ab1ed97c4f4bb54f48940faf5623',
+      kind: 'playlist',
+      name: 'Loops',
+      url: 'https://music.apple.com/us/playlist/loops/pl.4705ab1ed97c4f4bb54f48940faf5623?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Electronic',
+      artwork: 'https://is5-ssl.mzstatic.com/image/thumb/Features128/v4/07/78/5c/07785c39-2b6c-a8db-776f-ac375fdea7d4/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.bc556ab8077140d7a60b174146cb154d',
+      kind: 'playlist',
+      name: 'Corridos al Cien',
+      url: 'https://music.apple.com/us/playlist/corridos-al-cien/pl.bc556ab8077140d7a60b174146cb154d?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Música Mexicana',
+      artwork: 'https://is2-ssl.mzstatic.com/image/thumb/Features124/v4/04/e2/6e/04e26e5c-d110-a0f6-5fa3-314fabc602f3/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.8e78f32951a4462f9f4d369c006bc97d',
+      kind: 'playlist',
+      name: 'Today\'s Acoustic',
+      url: 'https://music.apple.com/us/playlist/todays-acoustic/pl.8e78f32951a4462f9f4d369c006bc97d?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Singer/Songwriter',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/59/16/ff/5916ff17-28cc-793b-ad26-b761a7407f2f/source/600x600cc.jpg'
+    }
+  ]
+};
+&nbsp;
+export const featuredPlaylistsState: FeaturedPlaylistsState = {
+  featuredPlaylists: featuredPlayLists,
+  featuredPlaylistsLoading: false,
+  featuredPlaylistsLoaded: false,
+  pageSize: 5,
+  filterText: 'day',
+  error: new HttpErrorResponse({})
+};
+&nbsp;
+export const filteredFeaturedPlaylists: FeaturedPlaylists = {
+  name: 'Featured Playlists',
+  content: [
+    {
+      id: 'pl.f4d106fed2bd41149aaacabb233eb5eb',
+      kind: 'playlist',
+      name: 'Today\'s Hits',
+      url: 'https://music.apple.com/us/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Pop',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features117/v4/94/17/2e/94172e16-e5d7-2d2b-66ec-e72473988168/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.2a86e272cf2349a99de68fd9cf7d4776',
+      kind: 'playlist',
+      name: 'Today\'s Indie Rock',
+      url: 'https://music.apple.com/us/playlist/todays-indie-rock/pl.2a86e272cf2349a99de68fd9cf7d4776?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Indie',
+      artwork: 'https://is3-ssl.mzstatic.com/image/thumb/Features124/v4/44/9d/66/449d66d4-38e5-f536-4b7f-71d28acc3202/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.2bb29727dbc34a63936787297305c37c',
+      kind: 'playlist',
+      name: 'Today\'s Chill',
+      url: 'https://music.apple.com/us/playlist/todays-chill/pl.2bb29727dbc34a63936787297305c37c?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Electronic',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features128/v4/0d/96/b8/0d96b8ca-a12d-32a5-520f-c64bca4793bb/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.3a85cc83130443b68415718f19372cf4',
+      kind: 'playlist',
+      name: 'Today\'s Easy Hits',
+      url: 'https://music.apple.com/us/playlist/todays-easy-hits/pl.3a85cc83130443b68415718f19372cf4?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Pop',
+      artwork: 'https://is5-ssl.mzstatic.com/image/thumb/Features123/v4/bc/a8/58/bca858f6-72b5-fec7-bcb0-ba9e42c48600/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.fecfa8a26ea44ad581d4fe501892c8ff',
+      kind: 'playlist',
+      name: 'Today\’s Christian',
+      url: 'https://music.apple.com/us/playlist/todays-christian/pl.fecfa8a26ea44ad581d4fe501892c8ff?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Christian &amp; Gospel',
+      artwork: 'https://is4-ssl.mzstatic.com/image/thumb/Features113/v4/e9/61/79/e9617945-a962-c232-1017-3fe801ffafa4/source/600x600cc.jpg'
+    },
+    {
+      id: 'pl.8e78f32951a4462f9f4d369c006bc97d',
+      kind: 'playlist',
+      name: 'Today\'s Acoustic',
+      url: 'https://music.apple.com/us/playlist/todays-acoustic/pl.8e78f32951a4462f9f4d369c006bc97d?app=music&amp;at=1000l4QJ&amp;ct=330&amp;itscg=10000&amp;itsct=330',
+      curator_name: 'Apple Music Singer/Songwriter',
+      artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/59/16/ff/5916ff17-28cc-793b-ad26-b761a7407f2f/source/600x600cc.jpg'
+    }
+  ]
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 15 2019 17:04:19 GMT+0100 (British Summer Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+<script src="../../block-navigation.js"></script>
+</body>
+</html>
